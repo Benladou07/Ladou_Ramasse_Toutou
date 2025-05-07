@@ -29,12 +29,16 @@
         /* Animation pour le logo avec fond rond de la même couleur que le contour */
         .logo-bounce {
             border-radius: 50%;
-            background-color: #3B82F6; /* Couleur du contour (bleu) */
+            background-color: #f0f9ff; /* Même couleur que le fond du site */
             animation: bounce 1.5s infinite;
             padding: 10px; /* Un peu de padding pour l'effet de rebond */
+            display: inline-block;
         }
         .logo-bounce:hover {
             transform: translateY(-5px);
+        }
+        .logo-bounce img {
+            border-radius: 50%; /* Garder le bord rond pour le logo */
         }
     </style>
 </head>
@@ -44,7 +48,7 @@
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
             <div class="flex items-center mb-4 md:mb-0">
                 <div class="mr-4">
-                    <!-- Ajout de l'animation de rebond et du fond du logo -->
+                    <!-- Logo avec animation et fond transparent -->
                     <div class="logo-bounce">
                         <img src="6018754B-13F0-4617-A834-CD943BB9F64A.png" alt="Logo de Ladou Ramasse Toutou" width="100">
                     </div>
