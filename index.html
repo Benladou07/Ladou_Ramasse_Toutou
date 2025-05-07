@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladou Ramasse Toutou - Ramassage de crottes de chien</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@preline/preline@2.0.0/dist/preline.min.js"></script>
+    <style>
+        .cartoon-bg {
+            background-color: #f0f9ff;
+        }
+        .cartoon-btn {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .cartoon-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+        .dog-icon {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body class="cartoon-bg font-sans">
+    <!-- Header -->
+    <header class="bg-blue-500 text-white py-6">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center mb-4 md:mb-0">
+                <div class="mr-4">
+                    <img src="6018754B-13F0-4617-A834-CD943BB9F64A.png" alt="Logo de Ladou Ramasse Toutou" width="100">
+                </div>
+                <h1 class="text-3xl font-bold">Ladou Ramasse Toutou</h1>
+            </div>
+            <div class="text-lg">
+                <p>Service professionnel de ramassage de crottes de chien</p>
+                <p>Saint-Georges-de-Beauce, QC</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-12 bg-gradient-to-r from-blue-400 to-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Votre cour sans crotte, votre vie plus facile!</h2>
+            <p class="text-xl mb-8">Nous prenons soin de votre espace extérieur pour que vous puissiez profiter de votre chien sans tracas.</p>
+            <a href="#contact" class="bg-yellow-400 hover:bg-yellow-500 text-blue-800 font-bold py-3 px-8 rounded-full cartoon-btn inline-block">Contactez-nous</a>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-600">Nos tarifs</h2>
+            
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white border border-gray-200 rounded-lg overflow-hidden">
+                    <thead class="bg-blue-500 text-white">
+                        <tr>
+                            <th class="py-4 px-6 text-left">Nombre de chiens</th>
+                            <th class="py-4 px-6 text-center">Petit terrain (<500m²)</th>
+                            <th class="py-4 px-6 text-center">Moyen terrain (500-1000m²)</th>
+                            <th class="py-4 px-6 text-center">Grand terrain (>1000m²)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-blue-50">
+                            <td class="py-4 px-6 font-semibold">1 chien</td>
+                            <td class="py-4 px-6 text-center">15$/semaine<br>25$/2 semaines<br>45$/mois</td>
+                            <td class="py-4 px-6 text-center">20$/semaine<br>35$/2 semaines<br>60$/mois</td>
+                            <td class="py-4 px-6 text-center">25$/semaine<br>45$/2 semaines<br>75$/mois</td>
+                        </tr>
+                        <tr class="hover:bg-blue-50">
+                            <td class="py-4 px-6 font-semibold">2 chiens</td>
+                            <td class="py-4 px-6 text-center">25$/semaine<br>45$/2 semaines<br>75$/mois</td>
+                            <td class="py-4 px-6 text-center">30$/semaine<br>55$/2 semaines<br>90$/mois</td>
+                            <td class="py-4 px-6 text-center">35$/semaine<br>65$/2 semaines<br>105$/mois</td>
+                        </tr>
+                        <tr class="hover:bg-blue-50">
+                            <td class="py-4 px-6 font-semibold">3 chiens</td>
+                            <td class="py-4 px-6 text-center">35$/semaine<br>65$/2 semaines<br>105$/mois</td>
+                            <td class="py-4 px-6 text-center">40$/semaine<br>75$/2 semaines<br>120$/mois</td>
+                            <td class="py-4 px-6 text-center">45$/semaine<br>85$/2 semaines<br>135$/mois</td>
+                        </tr>
+                        <tr class="hover:bg-blue-50">
+                            <td class="py-4 px-6 font-semibold">4 chiens</td>
+                            <td class="py-4 px-6 text-center">45$/semaine<br>85$/2 semaines<br>135$/mois</td>
+                            <td class="py-4 px-6 text-center">50$/semaine<br>95$/2 semaines<br>150$/mois</td>
+                            <td class="py-4 px-6 text-center">55$/semaine<br>105$/2 semaines<br>165$/mois</td>
+                        </tr>
+                        <tr class="hover:bg-blue-50">
+                            <td class="py-4 px-6 font-semibold">5 chiens</td>
+                            <td class="py-4 px-6 text-center">55$/semaine<br>105$/2 semaines<br>165$/mois</td>
+                            <td class="py-4 px-6 text-center">60$/semaine<br>115$/2 semaines<br>180$/mois</td>
+                            <td class="py-4 px-6 text-center">65$/semaine<br>125$/2 semaines<br>195$/mois</td>
+                        </tr>
+                        <tr class="hover:bg-blue-50">
+                            <td class="py-4 px-6 font-semibold">6 chiens et plus</td>
+                            <td class="py-4 px-6 text-center">Contactez-nous pour un devis personnalisé</td>
+                            <td class="py-4 px-6 text-center">Contactez-nous pour un devis personnalisé</td>
+                            <td class="py-4 px-6 text-center">Contactez-nous pour un devis personnalisé</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-600">Contactez-nous</h2>
+            <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold mb-2">Coordonnées</h3>
+                    <p class="text-gray-700"><span class="font-semibold">Nom:</span> Benjamin Ladouceur</p>
+                    <p class="text-gray-700"><span class="font-semibold">Email:</span> benjamin.ladouceur@hotmail.com</p>
+                    <p class="text-gray-700"><span class="font-semibold">Téléphone:</span> 581-761-1693</p>
+                </div>
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-semibold mb-2">Votre nom</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-semibold mb-2">Votre email</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="phone" class="block text-gray-700 font-semibold mb-2">Votre téléphone</label>
+                        <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-700 font-semibold mb-2">Votre message</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg cartoon-btn">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold mb-2">Ladou Ramasse Toutou</h3>
+                    <p>Service professionnel de ramassage de crottes de chien</p>
+                    <p>Saint-Georges-de-Beauce, QC</p>
+                </div>
+                <div>
+                    <p class="text-sm">© 2025 Ladou Ramasse Toutou. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
